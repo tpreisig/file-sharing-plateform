@@ -10,11 +10,13 @@
 body {
   display: flex;
   height: 100vh;
-  background: lightcyan;
+  background: rgba(224, 255, 255, 0.5);
 }
 
 .left-section {
   background: #fff;
+  border-right: 2px solid #ececec;
+  box-shadow: 1px 0 6px rgba(0, 100, 100, 0.1) inset;
   width: 170px;
   display: flex;
   flex-direction: column;
@@ -81,7 +83,7 @@ body {
   width: 75%;
   padding: 8px 10px;
   border-radius: 10px;
-  box-shadow: 0 2px 6px rgba(0, 100, 100, 0.2);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
 }
 .main .header .search button {
   font-size: 20px;
@@ -148,12 +150,12 @@ body {
   border: 2px solid transparent;
   border-radius: 20px;
   transition: all 0.3s ease;
-  box-shadow: 0 2px 6px rgba(0, 100, 100, 0.2);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
 }
 
 .main .quick-access .item:hover {
   box-shadow: none;
-  border-color: #888;
+  border-color: #ececec;
 }
 
 .main .quick-access .item i {
@@ -201,7 +203,7 @@ body {
   padding: 15px;
   width: 100%;
   border-radius: 14px;
-  box-shadow: 0 2px 6px rgba(0, 100, 100, 0.2);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
   border-spacing: 0 8px;
 }
 
@@ -223,7 +225,6 @@ body {
 .main table tbody tr td.icon i {
   font-size: 20px;
   padding: 8px;
-  color: dodgerblue;
   border: 1px solid transparent;
   border-radius: 8px;
   transition: all 0.3s ease;
@@ -267,6 +268,8 @@ body {
   justify-content: space-between;
   border-radius: 15px;
   margin-bottom: 40px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+
 }
 
 .right-section .profile .info {
@@ -312,8 +315,14 @@ body {
   justify-content: space-around;
   height: 300px;
   padding: 0 25px;
+  border: 2px solid transparent;
   border-radius: 16px;
-  box-shadow: 0 2px 6px rgba(0, 100, 100, 0.2);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+.right-section .widgets .disk:hover{
+  box-shadow: none;
+  border: 2px solid #ececec;
 }
 
 .right-section .widgets .disk .progress {
@@ -352,7 +361,7 @@ body {
 }
 
 .right-section .widgets .disk .info h5 span {
-  color: rgb(165, 125, 125);
+  color: rgb(189, 183, 107);
 }
 
 .right-section .widgets .disk .info p {
@@ -360,8 +369,13 @@ body {
   color: #888;
   font-weight: 700;
 }
+.right-section .widgets .bottom button{
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  font-weight: 500;
+}
 
 .right-section .widgets .bottom {
+  margin-top: 0.5rem;
   display: flex;
   flex-direction: column;
 }
@@ -390,12 +404,12 @@ body {
   border-radius: 16px;
   border: 2px solid transparent;
   cursor: pointer;
-  box-shadow: 0 2px 6px rgba(0, 100, 100, 0.2);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
 }
 
 .right-section .widgets .bottom .premium:hover {
   box-shadow: none;
-  border-color: #888;
+  border-color: rgb(1, 154, 154);
 }
 
 .right-section .widgets .bottom .premium .title {
@@ -423,6 +437,9 @@ body {
 }
 
 @media screen and (max-width: 1230px) {
+  body {
+    background: rgba(208, 252, 206, 0.5);
+  }
   .left-section {
     width: 90px;
   }
@@ -440,9 +457,6 @@ body {
   .left-section .sign-out i {
     font-size: 26px;
   }
-  .main {
-    background: rgb(208, 252, 206);
-  }
   .main .quick-access {
     justify-content: space-between;
   }
@@ -458,9 +472,6 @@ body {
   .main .quick-access .item p,
   .right-section .profile .info .account p {
     font-size: 12px;
-  }
-  .right-section {
-    background: rgb(208, 252, 206);
   }
   .right-section .widgets .disk {
     height: 270px;
@@ -490,6 +501,9 @@ body {
   }
 }
 @media screen and (max-width: 992px) {
+  body {
+    background: rgba(251, 223, 237, 0.5);
+  };
   .left-section {
     position: absolute;
     width: 160px;
@@ -508,13 +522,9 @@ body {
   .left-section .sidebar .sign-out i {
     font-size: 22px;
   }
-  .main {
-    background: rgb(251, 223, 237);
-  }
   .main,
   .right-section {
     padding: 20px 15px 15px;
-    background: rgb(251, 223, 237);
   }
   .main .header {
     gap: 10px;
@@ -534,19 +544,16 @@ body {
 @media screen and (max-width: 768px) {
   body {
     flex-direction: column;
+    background: rgba(252, 252,187, 0.5);
   }
   .main {
     padding: 26px 15px 0;
-    background: rgb(252, 252, 187);
   }
   .main .header {
     justify-content: start;
   }
   .main .header .search {
     width: 30%;
-  }
-  .right-section {
-    background: rgb(252, 252, 187);
   }
   .right-section .profile {
     position: absolute;
