@@ -15,20 +15,6 @@ A modern, responsive file management dashboard built with pure HTML and CSS. Fea
 
 ## 📱 Responsive Breakpoints
 
-| Screen Size | Layout Changes |
-|-------------|----------------|
-| 1230px ↓    | Collapsed sidebar (icons only) |
-| 992px ↓     | Hidden sidebar with menu toggle |
-| 768px ↓     | Stacked layout (column) |
-| 576px ↓     | Mobile-optimized compact view |
-
-## 🎨 Technologies Used
-
-- **HTML5** - Semantic structure
-- **CSS3** - Flexbox, Grid, Animations, Custom Properties
-- **Google Fonts** - Poppins & Ubuntu
-- **RemixIcon** - 4.2.0 (Icon library)
-- **Vanilla CSS** - No frameworks or preprocessors
 
 ## Planned Enhancements
 
