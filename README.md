@@ -15,13 +15,13 @@ A modern, responsive file management dashboard built with pure HTML and CSS. Fea
 
 ## 📱 Responsive Breakpoints
 
+- ↔️ @media screen and (max-width: 1230px)
+- ↔️ @media screen and (max-width: 992px)
+- ↔️ @media screen and (max-width: 768px)
+- ↔️ @media screen and (max-width: 576px)
 
-## Planned Enhancements
+## 👨‍💻 Visuals
 
-- interactivity
-- file upload functionality
-- drak mode toggle
-- real-time search
-- drag & drop
+![Screenshot](./assets/docs.png)
 
 
